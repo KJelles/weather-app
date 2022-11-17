@@ -1,3 +1,12 @@
+export interface GeoLocation {
+  country: string;
+  lat: number;
+  local_names: unknown;
+  lon: number;
+  name: string;
+  state: string;
+}
+
 export type Meridian = {
   lat: number;
   lon: number;

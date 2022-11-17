@@ -10,16 +10,13 @@ import {
   getLocalWeather,
   getLocalWeatherForecast,
 } from "./services/WeatherService";
-import { Meridian, WeatherInfo, Forecast, List } from "./services/Types";
-
-export interface GeoLocation {
-  country: string;
-  lat: number;
-  local_names: unknown;
-  lon: number;
-  name: string;
-  state: string;
-}
+import {
+  Meridian,
+  WeatherInfo,
+  Forecast,
+  List,
+  GeoLocation,
+} from "./services/Types";
 
 function App() {
   const [geo, setGeo] = useState("");
@@ -52,7 +49,7 @@ function App() {
       .catch((error) => console.error(error));
 
     getLocalWeatherForecast(meridians)
-      .then((res: Forecast & {list: List[]}) => setForecast(res))
+      .then((res: Forecast & { list: List[] }) => setForecast(res))
       .catch((error) => console.error(error));
   }, [meridians]);
 
