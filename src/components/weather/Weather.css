@@ -1,0 +1,15 @@
+.Temperature {
+  margin: 0;
+}
+
+.Location {
+  margin: 0;
+}
+
+.InfoWrapper {
+  margin-left: 1rem;
+}
+
+.Status {
+    text-transform: capitalize;
+}

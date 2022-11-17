@@ -1,0 +1,29 @@
+.App {
+  margin: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.WeatherGrid {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+.Weather {
+  grid-area: 1 / 1 / 4 / 4;
+}
+
+.WeatherDetail {
+  grid-area: 1 / 4 / 4 / 7;
+}
+
+.WeatherForecast {
+  grid-area: 4 / 1 / 7 / 7;
+}
