@@ -7,3 +7,7 @@
 # Resources
 
 API used to get weather data: [https://openweathermap.org/]
+
+# Usage
+
+Search any city using the searchbar and press "Search".
