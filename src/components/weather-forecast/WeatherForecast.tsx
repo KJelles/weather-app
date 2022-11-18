@@ -20,7 +20,7 @@ const groupDataByDate = (list: List[]) => {
     );
     if (found) {
       // Find the maximum temp of the day
-      found.main.temp = Math.max(o.main.temp);
+      found.main.temp = Math.max(found.main.temp, o.main.temp);
     } else {
       m.push(o);
     }
